@@ -1,0 +1,163 @@
+.box-model .parent {
+  background-color: #ddd;
+  margin-bottom: 50px; }
+
+.box-model .inner {
+  width: 500px;
+  margin: 50px;
+  padding: 50px;
+  border: 5px solid black; }
+
+.box-model .contentbox {
+  box-sizing: content-box;
+  background: red; }
+
+.box-model .borderbox {
+  background: skyblue;
+  box-sizing: border-box; }
+
+.display section {
+  padding: 1em; }
+
+.display .block {
+  background: blanchedalmond; }
+  .display .block div {
+    border: 1px dashed chocolate; }
+
+.display .list-item {
+  background: #e3c2ff; }
+  .display .list-item ul {
+    padding-left: 1em; }
+    .display .list-item ul li {
+      list-style: initial; }
+  .display .list-item ol {
+    padding-left: 1em;
+    margin-bottom: 2em; }
+    .display .list-item ol li {
+      list-style: decimal; }
+  .display .list-item li {
+    border: 1px dashed chocolate; }
+
+.display .inline {
+  background: lemonchiffon; }
+  .display .inline div {
+    display: inline;
+    border: 1px dashed darkgreen; }
+
+.display .inline-block {
+  background: mistyrose; }
+  .display .inline-block div {
+    display: inline-block;
+    border: 1px dashed firebrick; }
+
+.display .flex {
+  display: flex;
+  background: #ddd;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .display .flex div {
+    display: inline;
+    flex: 1 0 auto;
+    border: 1px dashed darkgreen; }
+    .display .flex div.first {
+      order: 2;
+      background: white; }
+    .display .flex div.second {
+      order: 1;
+      background: black;
+      color: white; }
+    .display .flex div.third {
+      order: 3; }
+
+.position {
+  /* =========================
+		Absolute and Fixed
+	============================ */
+  /* ==============================
+		Floats
+	================================= */ }
+  .position .box {
+    padding: 5px;
+    color: #373737;
+    font-weight: bold;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border: 1px solid #ccc; }
+  .position .container {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid green;
+    background-color: #eee; }
+  .position .container1 {
+    height: 200px;
+    position: relative;
+    /* now anchors absolute items */ }
+  .position .a {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: red; }
+  .position .b {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    background-color: orange;
+    opacity: .9;
+    z-index: 1; }
+  .position .c {
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    background-color: yellow; }
+  .position .d {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: chocolate; }
+  .position .e {
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: lightgreen; }
+  .position .f {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    background-color: salmon;
+    margin-top: -25px; }
+  .position .container2 {
+    overflow: hidden;
+    /* now contains floats */ }
+  .position .g, .position .h, .position .i {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: turquoise; }
+  .position .i {
+    clear: left;
+    background-color: orchid; }
+  .position .j {
+    clear: both;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: chartreuse; }
+  .position .container3 {
+    height: 2000px; }
+    .position .container3 h2 {
+      position: sticky;
+      top: 10px; }
+    .position .container3 .relative {
+      position: relative;
+      bottom: -20px;
+      display: inline-block; }
+
+header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-right: 1em; }
